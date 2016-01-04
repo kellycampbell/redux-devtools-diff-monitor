@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import radium from 'radium';
 import style from './style';
+import { decycle } from 'json-decycle';
 
 class ManifestActionComponent extends React.Component {
     static propTypes = {
@@ -37,18 +38,18 @@ class ManifestActionComponent extends React.Component {
 
     createOldValue(diff) {
         if (diff.item) {
-            return (JSON.stringify(diff.item.lhs));
+            return (JSON.stringify(diff.item.lhs, decycle));
         }
 
-        return JSON.stringify(diff.lhs);
+        return JSON.stringify(diff.lhs, decycle);
     }
 
     createNewValue(diff) {
         if (diff.item) {
-            return (JSON.stringify(diff.item.rhs));
+            return (JSON.stringify(diff.item.rhs, decycle));
         }
 
-        return JSON.stringify(diff.rhs);
+        return JSON.stringify(diff.rhs, decycle);
     }
 
     createPath(diff) {

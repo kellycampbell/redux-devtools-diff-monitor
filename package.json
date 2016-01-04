@@ -10,8 +10,13 @@
     "test": "mocha test/ --compilers js:babel-core/register",
     "lint": "eslint ./src/** --quiet"
   },
-  "repository": "https://github.com/whetstone/redux-devtools-diff-monitor.git",
-  "author": "iktl | gtfiorentino",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whetstone/redux-devtools-diff-monitor.git"
+  },
+  "author": {
+    "name": "iktl | gtfiorentino"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel": "^6.3.26",
@@ -35,10 +40,42 @@
   "dependencies": {
     "deep-diff": "^0.3.2",
     "immutable": "^3.7.6",
+    "json-decycle": "^1.0.0",
     "radium": "^0.13.5",
     "react": "^0.14.0",
     "react-redux": "^3.1.0",
     "redux": "^3.0.2",
     "redux-devtools": "^3.0.0"
-  }
+  },
+  "gitHead": "1d650ec0fd0af1fffb378a258aca3afa0658d963",
+  "bugs": {
+    "url": "https://github.com/whetstone/redux-devtools-diff-monitor/issues"
+  },
+  "homepage": "https://github.com/whetstone/redux-devtools-diff-monitor#readme",
+  "_id": "redux-devtools-diff-monitor@4.0.0",
+  "_shasum": "48c3bcbdca6fec685274aa7a11f49e7d6b7c1344",
+  "_from": "redux-devtools-diff-monitor@>=4.0.0 <5.0.0",
+  "_npmVersion": "2.14.2",
+  "_nodeVersion": "4.0.0",
+  "_npmUser": {
+    "name": "iktl",
+    "email": "ikt.luxford@gmail.com"
+  },
+  "dist": {
+    "shasum": "48c3bcbdca6fec685274aa7a11f49e7d6b7c1344",
+    "tarball": "http://registry.npmjs.org/redux-devtools-diff-monitor/-/redux-devtools-diff-monitor-4.0.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "iktl",
+      "email": "ikt.luxford@gmail.com"
+    },
+    {
+      "name": "gtfiorentino",
+      "email": "gtfiorentino@gmail.com"
+    }
+  ],
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/redux-devtools-diff-monitor/-/redux-devtools-diff-monitor-4.0.0.tgz",
+  "readme": "ERROR: No README data found!"
 }
